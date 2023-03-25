@@ -1,34 +1,21 @@
-import HeaderWidget from '@/components/HeaderWidget.vue';
-import SidebarWidget from '@/components/SidebarWidget.vue';
-import WidgetShed from '@/components/WidgetShed.vue';
-import FooterWidget from '@/components/FooterWidget.vue';
-
-<template> 
-<HeaderWidget />
-<SidebarWidget />
-<WidgetShed />
-<FooterWidget />
-
+<template>
+  <div id="wonderlab">
+    <vue-drag-resize>
+      <widgetshed />
+    </vue-drag-resize>
+  </div>
 </template>
 
+<script>
+import WidgetShed from './components/WidgetShed.vue';
+
 export default {
-  name: 'WonderLab',
   components: {
-    HeaderWidget,
-    SidebarWidget,
-    WidgetShed,
-    FooterWidget
+    WidgetShed
   },
-  // 
 };
-<button @click="createWonderWidget">Create WonderWidget</button>
-methods: {
-  createWonderWidget() {
-    const newId = 'widget-' + Date.now();
-    this.$refs.widgetShed.saveWidget({ id: newId });
-  },
-  <wonder-widget
-  v-for="widget in $refs.widgetShed.widgets"
-  :key="widget.id"
-  :id="widget.id"
-/>
+</script>
+
+<style scoped>
+/* Add your CSS styles here */
+</style>
