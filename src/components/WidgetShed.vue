@@ -5,6 +5,7 @@
         :key="index"
         :widget="widget"
         @delete="deleteWidget(index)"
+        @update="updateWidget(index, $event)"
       />
       <button @click="addWidget">Add Widget</button>
     </div>
@@ -15,11 +16,11 @@
   
   export default {
     components: {
-      WonderWidget
+      WonderWidget,
     },
     data() {
       return {
-        widgets: []
+        widgets: [],
       };
     },
     methods: {
@@ -30,14 +31,18 @@
           x: 0,
           y: 0,
           width: 100,
-          height: 100
+          height: 100,
         });
       },
       deleteWidget(index) {
         // Remove the widget from the widgets array
         this.widgets.splice(index, 1);
-      }
-    }
+      },
+      updateWidget(index, updatedWidget) {
+        // Update the widget in the widgets array
+        this.$set(this.widgets, index, updatedWidget);
+      },
+    },
   };
   </script>
   
