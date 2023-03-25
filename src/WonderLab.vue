@@ -21,3 +21,14 @@ export default {
   },
   // 
 };
+<button @click="createWonderWidget">Create WonderWidget</button>
+methods: {
+  createWonderWidget() {
+    const newId = 'widget-' + Date.now();
+    this.$refs.widgetShed.saveWidget({ id: newId });
+  },
+  <wonder-widget
+  v-for="widget in $refs.widgetShed.widgets"
+  :key="widget.id"
+  :id="widget.id"
+/>

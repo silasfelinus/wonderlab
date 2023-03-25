@@ -1,19 +1,15 @@
 <template>
-    <div>
-      <!-- Your component's HTML goes here -->
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'FooterWidget',
-    data() {
-      return {
-        // Your component's data properties go here
-      };
-    },
-    methods: {
-      // Your component's methods go here
-    },
-  };
-  </script>
+  <wonder-widget>
+    <!-- FooterWidget content goes here -->
+  </wonder-widget>
+</template>
+
+<script>
+import WonderWidget from './WonderWidget.vue';
+
+export default {
+  components: {
+    WonderWidget,
+  },
+};
+</script>
