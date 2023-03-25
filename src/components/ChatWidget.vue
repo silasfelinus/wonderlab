@@ -38,15 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.chatbox {
-  display: flex;
-  flex-direction: column
 
-
-
-
-
-<style scoped>
 .chatbox {
   display: flex;
   flex-direction: column;
