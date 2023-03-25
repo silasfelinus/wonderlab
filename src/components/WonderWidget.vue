@@ -1,7 +1,7 @@
 <template>
-    <div>
-      <!-- Your component's HTML goes here -->
-    </div>
+    <vue-drag-resize :id="id">
+      <!-- Your WonderWidget content goes here -->
+    </vue-drag-resize>
   </template>
   
   <script>

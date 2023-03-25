@@ -1,12 +1,9 @@
 <template>
-  <div class="hello">
+  <div class="welcome">
     <h1>{{ msg }}</h1>
     <p>
       Widget Wonderlab<br>
       Home of Wonderwidgets, Coming Soon!
-      In the meantime, here are the many offerings of Cafe Purr:
-
-
       
 
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
@@ -33,7 +30,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Welcome',
   props: {
     msg: String
   }
