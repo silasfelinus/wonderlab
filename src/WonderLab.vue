@@ -1,7 +1,7 @@
 <template>
   <div id="wonderlab">
     <vue-drag-resize>
-      <widgetshed />
+      <widget-shed />
     </vue-drag-resize>
   </div>
 </template>

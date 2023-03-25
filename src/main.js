@@ -1,4 +1,3 @@
-./src/main.js
 import { createApp } from 'vue';
 import { createStore } from 'vuex';
 import VueDragResize from 'vue-drag-resize';
