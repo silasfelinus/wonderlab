@@ -3,18 +3,24 @@ A single-screen Vue web app designed to provide a modern, sleek, fast, and frien
 
 Local Development Environment: Ubuntu 22 and Win 11, Visual Studio Code, Chrome
 
-Technologies: VUE CLI, Vue 3, TypeScript, Vuex, Vue-Draggable, Quasar
+Technologies: Vue 3 Composition API, TypeScript, SCSS, Vuex, Vue-Draggable, Quasar
 
-Front-End Experience: The application features a collapsible header, footer, and sidebar, emphasizing a clean and intuitive user interface for crafting WonderWidgets.
+Front-End Experience: The application features a collapsible header, footer, sidebar, chatwindow, and button
+to create WonderWidgets.
 
 WonderLab:
 
-HeaderComponent: Provides the ability to save/load lab states, create new widgets, manage user login, and toggle night mode.
-SidebarComponent: Contains a variety of drag-and-droppable icons to activate options within widgets and the lab. Icons include textbar, drop-down bar, image_display, microphone, and cables.
-FooterComponent: Displays custom copyright information.
-WonderWidget: GUI-abstracted programmed-API calls to language processing apis
+Header.vue: Provides the ability to save/load lab states, create new widgets, manage user login, and toggle night mode.
+Sidebar.vue: Contains a variety of drag-and-droppable icons to activate options within widgets and the lab. Icons include textbar, drop-down bar, image_display, microphone, and cables.
+Footer.vue: Displays custom copyright information.
+Chatwindow.vue
+WonderLab.vue: the grid based workspace to build, save, and share wonderwidgets, with step-based save system
+WonderWidget.vue: GUI-abstracted programmed-API calls to language processing apis with at least one input_grommet, output_grommet, and data display
 
-A draggable and resizable component with customizable inputs and outputs.
+WonderWidget Parts
+Button.vue
+
+A draggable and resizable components
 Offers various optional settings, such as text fields, drop-down selections, and data display.
 Allows users to sort options via drag-and-drop.
 Step-Based Save System: Ensures that users can easily save and retrieve their progress when creating and editing widgets.
