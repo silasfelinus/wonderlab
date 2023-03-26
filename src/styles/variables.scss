@@ -1,5 +1,5 @@
 // src/variables.scss
-// variables.scss
+
 
 // Colors
 $whimsical-blue: #6ec1e4;
@@ -9,39 +9,86 @@ $creative-yellow: #ffeb3b;
 $soft-blue: #9edff2;
 $light-green: #8bc34a;
 
+//Preset 2: WonderWidgets Galaxy
+$color-primary: #1E9BA4; // Interstellar Teal
+$color-secondary: #C0C0C0; // Silver
+$color-tertiary: #B87333; // Copper
+$color-quaternary: #ffffff; // White
+$color-light: #8bc34a; // Light Green
+$color-accent: #4caf50; // Playful Green
+
+//Preset 3: Skybound Spectrum
+$color-primary: #87CEEB; // Sky Blue
+$color-secondary: #FFD700; // Gold
+$color-tertiary: #C0C0C0; // Silver
+$color-quaternary: #ffffff; // White
+$color-light: #9edff2; // Soft Blue
+$color-accent: #4caf50; // Playful Green
+
+//Preset 4: Digital Oasis
+$color-primary: #1B5E20; // Deep Green
+$color-secondary: #64DD17; // Bright Green
+$color-tertiary: #00B0FF; // Ocean Blue
+$color-quaternary: #FFFFFF; // White
+$color-light: #9C27B0; // Deep Purple
+$color-accent: #FBC02D; // Yellow
+
+//Preset 5: Futuristic Fusion
+$color-primary: #00BFFF; // Cyan
+$color-secondary: #FF00FF; // Magenta
+$color-tertiary: #FFD700; // Gold
+$color-quaternary: #FFFFFF; // White
+$color-light: #4caf50; // Playful Green
+$color-accent: #9edff2; // Soft Blue
+
+//Preset 6: Steamcraft Station
+$color-primary: #b87333; // Copper
+$color-secondary: #8b0000; // Dark Red
+$color-tertiary: #2f4f4f; // Dark Slate Gray
+$color-quaternary: #FFFFFF; // White
+$color-light: #8bc34a; // Light Green
+$color-accent: #9edff2; // Soft Blue
+
+//Hierarchy
+$color-primary: $whimsical-blue;
+$color-secondary: $dreamy-white;
+$color-tertiary: $playful-green;
+$color-quaternary: $creative-yellow;
+$color-light: $soft-blue;
+$color-accent: $light-green;
 
 // Typography
-$primary-font: 'Poppins', sans-serif;
-$secondary-font: 'Pacifico', cursive;
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Pacifico', cursive;
 
 // Buttons
 $button-border-radius: 4px;
-$button-background: $whimsical-blue;
-$button-font: $primary-font;
-$button-text-color: $dreamy-white;
-$button-hover-bg: $soft-blue;
+$button-background-color: $color-primary;
+$button-font-family: $font-primary;
+$button-text-color: $color-secondary;
+$button-hover-background-color: $color-light;
 
 // Toggles
 $toggle-border-radius: 50%;
-$toggle-background: $playful-green;
-$toggle-knob-color: $dreamy-white;
-$toggle-active-bg: $creative-yellow;
+$toggle-background-color: $color-tertiary;
+$toggle-knob-color: $color-secondary;
+$toggle-active-background-color: $color-quaternary;
 
 // Input Fields
 $input-border-radius: 4px;
-$input-background: $dreamy-white;
-$input-border: 1px solid $whimsical-blue;
-$input-font: $primary-font;
-$input-text-color: $whimsical-blue;
+$input-background-color: $color-secondary;
+$input-border-color: $color-primary;
+$input-font-family: $font-primary;
+$input-text-color: $color-primary;
 
 // Dropdowns
 $dropdown-border-radius: 4px;
-$dropdown-background: $dreamy-white;
-$dropdown-font: $primary-font;
-$dropdown-text-color: $whimsical-blue;
+$dropdown-background-color: $color-secondary;
+$dropdown-font-family: $font-primary;
+$dropdown-text-color: $color-primary;
 
 // Tooltips
 $tooltip-border-radius: 4px;
-$tooltip-background: $soft-blue;
-$tooltip-font: $primary-font;
-$tooltip-text-color: $dreamy-white;
+$tooltip-background-color: $color-light;
+$tooltip-font-family: $font-primary;
+$tooltip-text-color: $color-secondary;

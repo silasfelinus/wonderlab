@@ -1,4 +1,3 @@
-
 Hi, ChatGPT! I'm Silas. I have a vue.js project. I need your help completing my code. I hav the following structure and I'm trying to follow best practices.
 I'm building a gui development lab that I can use to develop future tools.
 I care a lot about having a pleasing design, and I haven't yet built myself a gui that I find pleasing to look at, so any assistance with programmatic design tips would be a BIG help.
@@ -55,15 +54,16 @@ Supported File Types: txt, yaml, json, jpg, png.
 ./README.md
 ./tsconfig.jsonvue.config.js
 ./public/index.html
-./styles/variables.scss
 ./main.ts
+./styles/variables.scss
+
+All colors should reference the variables preset in variables.scss: $color-primary, $color-secondary, $color-tertiary, $color-quaternary, $color-light, $color-accent
+
 
 [Empty Components]
 ./src/components/: Button.vue, ChatWindow.vue, Footer.vue, Header.vue, Sidebar.vue, TextInput.vue, Wonderlab.vue, WonderWidget.vue
 
 
-
-./src/App.vue (needs to be looked at)
 I'm sending main.ts to establish a beginning chain of programming:
 #./main.ts
 import { createApp } from 'vue';
