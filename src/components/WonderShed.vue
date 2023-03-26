@@ -12,7 +12,7 @@
   </template>
   
   <script>
-  import WonderWidget from './WonderWidget.vue';
+  import WonderWidget from './components/WonderWidget.vue';
   
   export default {
     components: {
