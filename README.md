@@ -1,37 +1,26 @@
 WonderLab Project Software Requirements Specification (SRS)
 
-Introduction
-The WonderLab project aims to develop a flexible application for creating, editing, testing, and sharing designs using a single widget. The application will utilize Vue 3, Typescript, and Composition API.
+The WonderLab project is a hobby portfolio project that aims to develop a flexible application for creating, editing, testing, and sharing complex programmatic api calls using a single widget. The target audience includes designers, developers, and hobbyists looking for an intuitive way to create and share their work. The application will utilize Vue 3, Typescript, and Composition API.
 
 System Overview
+2.1 App.vue: Hosts main layout, manages global application state and preferences, and provides collapsible components for an improved user experience.
 
-2.1 App.vue
-Hosts main layout: Header, Sidebar, WonderLab components, and Footer.
-Manages global application state and preferences.
-Collapsible components for improved user experience.
+2.2 HeaderComponent.vue: Offers lab state save/load functionality and global actions or settings.
 
-2.2 HeaderComponent.vue
-Provides lab state save/load functionality and global actions or settings.
+2.3 SidebarComponent.vue: Provides a selection of widget assembly parts and customization options for widget properties.
 
-2.3 SidebarComponent.vue
-Offers widget assembly parts and customization options for widget properties.
+2.4 WonderLab.vue: Creates a workspace for user interaction with widgets and connection handling.
 
-2.4 WonderLab.vue
-Manages workspace for user interaction with widgets and connection handling.
+2.5 WonderWidget.vue: Implements core functionality, and manages input/output properties and connections.
 
-2.5 WonderWidget.vue
-Implements core functionality and manages input/output properties and connections.
+2.6 CustomProperties.vue (sub-component of WonderWidget): Contains specific properties for widget customization.
 
-2.6 CustomProperties.vue (sub-component of WonderWidget)
-Contains specific properties for widget customization.
-
-2.7 FooterComponent.vue
-Displays copyright, attribution, and any additional footer information.
+2.7 FooterComponent.vue: Displays copyright, attribution, and any additional footer information.
 
 Functional Requirements
-3.1 Authentication: Email/password and Single Sign-On (SSO).
+3.1 Authentication: Email/password and Single Sign-On (SSO) with role-based access control.
 3.2 Responsive Design: Compatibility across various devices (mobile, tablet, desktop).
-3.3 User Roles: Guest, user, and admin roles.
+3.3 User Roles: Guest (limited access), user (full access to features), and admin (user management and moderation).
 3.4 Sharing: Toggle widgets as "shareable" for public gallery display.
 3.5 Data Storage: MongoDB and local files on the hosting server.
 3.6 Data Formats: JSON and YAML.
@@ -41,8 +30,11 @@ Functional Requirements
 3.10 Localization: American English initially.
 
 Non-Functional Requirements
-4.1 Maintainability and Scalability: Vue 3, Typescript, and Composition API.
+4.1 Maintainability and Scalability: Vue 3, Typescript, and Composition API ensure maintainable and scalable code.
 4.2 Performance: Optimization for user interaction and widget handling.
+4.3 Security: Application of best practices for secure data storage and communication.
+4.4 Usability: Intuitive interface and user-friendly design.
+4.5 Reliability: Consistent performance across different devices and environments.
 
 Additional Components
 Vuex: State management.
