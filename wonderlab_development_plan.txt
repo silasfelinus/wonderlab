@@ -1,0 +1,117 @@
+"Widget Wonderlab"
+A single-screen Vue web app designed to provide a modern, sleek, fast, and friendly user-sandbox for users to save, load, share, and create "WonderWidgets."
+
+Local Development Environment: Ubuntu 22 and Win 11, Visual Studio Code, Chrome
+
+Technologies: VUE CLI, Vue 3, TypeScript, Vuex, Vue-Draggable, Quasar
+
+Front-End Experience: The application features a collapsible header, footer, and sidebar, emphasizing a clean and intuitive user interface for crafting WonderWidgets.
+
+WonderLab:
+
+HeaderComponent: Provides the ability to save/load lab states, create new widgets, manage user login, and toggle night mode.
+SidebarComponent: Contains a variety of drag-and-droppable icons to activate options within widgets and the lab. Icons include textbar, drop-down bar, image_display, microphone, and cables.
+FooterComponent: Displays custom copyright information.
+WonderWidget: GUI-abstracted programmed-API calls to language processing apis
+
+A draggable and resizable component with customizable inputs and outputs.
+Offers various optional settings, such as text fields, drop-down selections, and data display.
+Allows users to sort options via drag-and-drop.
+Step-Based Save System: Ensures that users can easily save and retrieve their progress when creating and editing widgets.
+
+File Types Supported: txt, yaml, json, jpg, png
+
+By incorporating the design intent and focusing on a user-friendly experience, the "Widget Wonderlab" aims to provide a seamless and enjoyable environment for users to create, edit, and share their custom WonderWidgets. The modular and customizable design of the widgets, along with the easy-to-use drag-and-drop interface, ensures that users can tailor their experience to their specific needs and preferences. The application's organized layout, with distinct sections for header, sidebar, and footer components, contributes to its overall modern and sleek appearance.
+
+
+
+
+Project Setup:
+a. Initialize a new project using Vue CLI, and select Vue 3, Typescript, and Vuex as the main technologies.
+b. Set up a GitHub repository and configure continuous integration using GitHub Actions.
+c. Integrate Quasar as the UI framework.
+
+Application Structure:
+a. Set up the main application structure and components (App.vue, HeaderComponent.vue, SidebarComponent.vue, WonderLab.vue, WonderWidget.vue, CustomProperties.vue, and FooterComponent.vue).
+b. Implement global state management using Vuex.
+c. Configure routing for different user roles and authenticated/unauthenticated users.
+
+Authentication:
+a. Implement email/password-based authentication using a secure library or service.
+b. Set up Single Sign-On (SSO) for a seamless authentication experience.
+c. Implement role-based access control for guest, user, and admin roles.
+
+Responsive Design:
+a. Utilize Quasar's built-in responsive design components and utilities.
+b. Test the application across various devices (mobile, tablet, and desktop) and adjust layout and styles accordingly.
+
+User Roles and Sharing:
+a. Develop functionality to manage user roles, including guest, user, and admin.
+b. Implement widget sharing and public gallery display capabilities.
+
+Data Storage and Formats:
+a. Configure MongoDB for storing application data.
+b. Implement local file storage for user-generated content.
+c. Support JSON and YAML data formats for input and output.
+
+API Integrations:
+a. Integrate OpenAI and Hugging Face API for AI language processing.
+b. Configure Axios for handling HTTP requests.
+
+Testing and Deployment:
+a. Implement Continuous Integration testing using GitHub Actions.
+b. Deploy the application to a hosting provider or platform.
+
+Accessibility:
+a. Choose color-blind friendly colors and UI elements.
+b. Integrate Google's Web Speech API for improved accessibility.
+
+Localization:
+a. Implement American English localization initially.
+b. Plan for future localization and internationalization efforts.
+
+Non-Functional Requirements:
+a. Ensure maintainability and scalability with Vue 3, Typescript, and Composition API.
+b. Optimize performance for user interaction and widget handling.
+c. Apply security best practices for data storage and communication.
+d. Design an intuitive and user-friendly interface.
+e. Test the application for consistent performance across devices and environments.
+
+Additional Components:
+a. Integrate vue-draggable for drag and drop features.
+b. Continuously iterate on the design and functionality based on user feedback and analytics.
+
+By following these steps, you can successfully develop and deploy the WonderLab Project according to its Software Requirements Specification (SRS).
+
+
+
+
+Day 1:
+
+Set up project structure with Vue 3 and TypeScript
+Install necessary dependencies (Axios, Quasar, Vue-draggable, etc.)
+Create basic layout with App.vue, HeaderComponent.vue, and FooterComponent.vue
+Day 2:
+
+Implement SidebarComponent.vue for widget assembly parts selection
+Develop WonderLab.vue as the main workspace for user interaction
+Create WonderWidget.vue with basic input/output properties and connections
+Day 3:
+
+Add CustomProperties.vue as a sub-component of WonderWidget for widget customization
+Implement basic API integration with OpenAI or Hugging Face API for AI language processing
+Ensure responsiveness for mobile, tablet, and desktop devices
+Day 4:
+
+Set up a basic guest user role with limited access to features
+Add functionality to save/load lab states in HeaderComponent.vue
+Implement widget sharing as "shareable" for public gallery display (basic version)
+Day 5:
+
+Conduct basic testing and bug fixing
+Optimize performance for user interaction and widget handling
+Deploy the demo application to a hosting provider (Heroku, Netlify, or Vercel)
+This five-day outline focuses on creating a working demo with core features, eliminating tasks related to marketing, extra languages, and other non-essential aspects for a basic demo.
+
+
+
