@@ -1,0 +1,94 @@
+Design Document: WonderLab
+
+Overview
+The objective of this design document is to create a captivating, interactive, and whimsical sandbox experience for modern coders, inspired by classic sandbox games. The WonderLab design features a single-page application with a collapsible header, sidebar, footer, and chat window.
+
+Color Palette
+
+Primary colors:
+
+Whimsical Blue: #6ec1e4
+Dreamy White: #f5fcff
+Secondary colors:
+
+Playful Green: #4caf50
+Creative Yellow: #ffeb3b
+Tertiary colors (for accents and hover effects):
+
+Soft Blue: #9edff2
+Light Green: #8bc34a
+Typography
+Primary font: 'Poppins', sans-serif
+Secondary font (for headings): 'Pacifico', cursive
+
+Layout
+A. Header
+
+Collapsible
+Whimsical Blue background
+Dreamy White text
+Logo and navigation items
+B. Sidebar
+
+Collapsible
+Whimsical Blue background
+Dreamy White icons and text
+Navigation items and user profile
+C. Main Content
+
+WonderLab element in the center
+Toggles to hide different UI elements
+Responsive grid layout for additional content
+D. Footer
+
+Collapsible
+Whimsical Blue background
+Dreamy White text
+Links and copyright information
+E. Live Chat Window
+
+Collapsible
+Whimsical Blue header
+Dreamy White background for chat area
+Playful Green for chat bubbles
+Components
+A. Buttons
+
+Border-radius: 4px
+Background: Whimsical Blue
+Font: Poppins
+Text color: Dreamy White
+Hover effect: Soft Blue background
+B. Toggles
+
+Border-radius: 50%
+Background: Playful Green
+Knob color: Dreamy White
+Active state: Creative Yellow background
+C. Input Fields
+
+Border-radius: 4px
+Background: Dreamy White
+Border: 1px solid Whimsical Blue
+Font: Poppins
+Text color: Whimsical Blue
+D. Dropdowns
+
+Border-radius: 4px
+Background: Dreamy White
+Font: Poppins
+Text color: Whimsical Blue
+E. Tooltips
+
+Border-radius: 4px
+Background: Soft Blue
+Font: Poppins
+Text color: Dreamy White
+CSS Naming Convention
+Use BEM (Block, Element, Modifier) naming convention for maintainability and readability.
+Example: block__element--modifier
+CSS Preprocessor
+Utilize SCSS for better organization, maintainability, and the ability to use variables, mixins, and nesting.
+Integration with Vue3 and TypeScript
+Use Vue3 scoped CSS to ensure styles are only applied to the relevant components.
+Leverage TypeScript to create a more robust and type-safe codebase.
