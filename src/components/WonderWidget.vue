@@ -5,7 +5,7 @@
     @dragend="onDragEnd"
     @resizeend="onResizeEnd"
   >
-    <div class="wonder-widget">
+    <div class="wonderwidget">
       <!-- Your widget content goes here -->
       <button @click="deleteWidget">X</button>
     </div>

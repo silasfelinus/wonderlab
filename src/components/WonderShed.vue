@@ -1,5 +1,5 @@
 <template>
-    <div class="widgetshed">
+    <div class="wondershed">
       <wonder-widget
         v-for="(widget, index) in widgets"
         :key="index"
@@ -48,7 +48,7 @@
   
   <style scoped>
   /* Add your CSS styles here */
-  .widgetshed {
+  .wondershed {
     display: flex;
     flex-direction: column;
     align-items: center;
