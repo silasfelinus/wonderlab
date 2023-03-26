@@ -1,0 +1,79 @@
+
+Hi, ChatGPT! I'm Silas. I have a vue.js project. I need your help completing my code. I hav the following structure and I'm trying to follow best practices.
+I'm building a gui development lab that I can use to develop future tools.
+I care a lot about having a pleasing design, and I haven't yet built myself a gui that I find pleasing to look at, so any assistance with programmatic design tips would be a BIG help.
+A previous ChatGPT instructed me about SCSS, and we setup a basic structure. That was a great choice, and I appreciate any other advice like it to programmatically scaffold designs.
+I was advised to implement Quasar, but other than installing it, I have done nothing with it, and will need guidance as we look at the App.vue.
+
+This is what I have so far:
+
+Project_id: "Widget Wonderlab"
+Intent: "A single-screen Vue web app designed to provide a modern, sleek, fast, and friendly sandbox to save, load, share, and create WonderWidgets."
+Dev Environment: Ubuntu 22, Visual Studio Code, Chrome
+Installed Modules: Vue 3, TypeScript, SCSS, Vuex, Vue-Draggable, Quasar
+Principles: Material Design, Composition API
+
+[Front-End Experience]:
+
+patrially-collapsile Sidebar on right
+ChatWindow on left
+below ChatWindow, left Footer is stopped by Sidebar
+centered of screen, square WonderLab
+centered inside Wonderlab, Button
+
+
+[Structure: Material Design]
+Component:Desired Effects
+
+./src/components/Header.vue: Fixed at the top, provides the ability to save/load lab states, create new widgets, manage user login, and toggle night mode.
+./src/components/Sidebar.vue: Partially-collapsible, contains a variety of drag-and-droppable Material Design icons to activate options within widgets and the lab. 
+./src/components/Footer.vue: Displays copyright information.
+./src/components/ChatWindow.vue: Partially-collapsible component on the left side for user interaction.
+./src/components/WonderLab.vue: A grid-based workspace for building, saving, and sharing WonderWidgets, utilizing a step-based save system for easy progress tracking
+./src/components/WonderWidget.vue: GUI-abstracted programmed-API calls to language processing APIs, featuring at least one input_grommet, output_grommet, and data display.
+
+[Sidebar Icons, to be created, will need stylish programmatic representation to fill in]: new_text_input, new_text_display, new_image_input, new_image_output, new_robot, new_drop_down_bar,new_microphone, new_speaker, new_cables, new_widget, new_garbage_shed, new_button
+
+
+
+Key Features:
+
+Draggable and resizable components
+Various optional settings, such as text fields, drop-down selections, and data display.
+User-friendly drag-and-drop sorting.
+Step-Based Save System:
+Supported File Types: txt, yaml, json, jpg, png.
+
+
+[Configured Files available as needed]
+./src/shims-vue.d.ts
+./src/store.ts
+./.gitignore
+./jsconfig.json
+./package-lock.json
+./package.json
+./README.md
+./tsconfig.jsonvue.config.js
+./public/index.html
+./styles/variables.scss
+./main.ts
+
+[Empty Components]
+./src/components/: Button.vue, ChatWindow.vue, Footer.vue, Header.vue, Sidebar.vue, TextInput.vue, Wonderlab.vue, WonderWidget.vue
+
+
+
+./src/App.vue (needs to be looked at)
+I'm sending main.ts to establish a beginning chain of programming:
+#./main.ts
+import { createApp } from 'vue';
+import App from './App.vue';
+import store from './store';
+import './styles/main.scss';
+import { Quasar } from 'quasar';
+import 'quasar/dist/quasar.css';
+
+const app = createApp(App);
+app.use(store);
+app.use(Quasar);
+app.mount('#app');
