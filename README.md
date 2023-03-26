@@ -17,6 +17,8 @@ System Overview
 
 2.7 FooterComponent.vue: Displays copyright, attribution, and any additional footer information.
 
+2.8 WonderChat.vue: modular livechatwindow
+
 Functional Requirements
 3.1 Authentication: Email/password and Single Sign-On (SSO) with role-based access control.
 3.2 Responsive Design: Compatibility across various devices (mobile, tablet, desktop).
