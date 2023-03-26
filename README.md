@@ -1,6 +1,6 @@
 WonderLab Project Software Requirements Specification (SRS)
 
-The WonderLab project is a hobby portfolio project that aims to develop a flexible application for creating, editing, testing, and sharing complex programmatic api calls using a single widget. The target audience includes designers, developers, and hobbyists looking for an intuitive way to create and share their work. The application will utilize Vue 3, Typescript, and Composition API.
+The WonderLab project is a hobby portfolio project for creating, editing, testing, and sharing complex programmatic api calls using a single widget. The target audience includes designers, developers, and hobbyists looking for an intuitive way to work with natural language processors, . The project utilizes Vue 3, Typescript, and Composition API.
 
 System Overview
 2.1 App.vue: Hosts main layout, manages global application state and preferences, and provides collapsible components for an improved user experience.
