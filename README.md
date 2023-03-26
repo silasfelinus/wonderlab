@@ -1,48 +1,42 @@
-WonderWidgets Unleashed 🚀
+WonderLab Project Software Requirements Specification (SRS)
 
-Join our coding adventure to revolutionize AI API interactions by transforming them into customizable, shareable, and fun WonderWidgets!
+Introduction
+The WonderLab project aims to develop a flexible application for creating, editing, testing, and sharing designs using a single widget. The application will utilize Vue 3, Typescript, and Composition API.
+System Overview
+2.1 App.vue
+Hosts main layout: Header, Sidebar, and WonderLab components.
+Manages global application state and preferences.
+2.2 HeaderComponent.vue
 
-Core Stack: Python 3.8, Quart, and Gradio, running in multiprocess for the ultimate fusion of Gradio's simple API calls and Quart's limitless CSS and JS styling options. (Vue.js upgrade in production)
+Provides lab state save/load functionality and global actions or settings.
+2.3 SidebarComponent.vue
 
-Value Proposition: "Got a cool idea? Let's team up and bring it to life as a market-ready web app with just a single click. It's coding magic!"
+Offers widget assembly parts and customization options for widget properties.
+2.4 WonderLab.vue
 
-Progress So Far:
-Consciously-crafted infrastructure built with modularity, flexibility, and clean coding in mind.
+Manages workspace for user interaction with widgets and connection handling.
+2.5 WonderWidget.vue
 
-GitHub Repository: https://github.com/silasfelinus/serendipity/
+Implements core functionality and manages input/output properties and connections.
+2.6 CustomProperties.vue (sub-component of WonderWidget)
 
-Python 3.8, Quart, and Gradio, using Vue for the drag-and-drop interface
-
-Pytest, Logger, GitHub Actions continuous-integration
-
-Library of Custom Prompts itching to be turned into awe-inspiring PromptWidgets.
-
-6 custom css packages for a modular interface
-Various art assets waiting to be stitched in by the world's most awkward html designer.
-Beginning design of wonderwidgets lab in Vue.js - feeling ambitious with the new tools.
-
-
-
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Contains specific properties for widget customization.
+Functional Requirements
+3.1 Authentication: Email/password and Single Sign-On (SSO).
+3.2 Responsive Design: Compatibility across various devices (mobile, tablet, desktop).
+3.3 User Roles: Guest, user, and admin roles.
+3.4 Sharing: Toggle widgets as "shareable" for public gallery display.
+3.5 Data Storage: MongoDB and local files on the hosting server.
+3.6 Data Formats: JSON and YAML.
+3.7 API Integrations: OpenAI and Hugging Face API for AI language processing.
+3.8 Testing and Deployment: Continuous Integration testing through GitHub Actions.
+3.9 Accessibility: Color-blind friendly colors and Google's Web Speech API integration.
+3.10 Localization: American English initially, expandable later.
+Non-Functional Requirements
+4.1 Maintainability and Scalability: Vue 3, Typescript, and Composition API.
+4.2 Performance: Optimization for user interaction and widget handling.
+Additional Components
+Vuex: State management.
+Quasar: UI framework.
+Axios: HTTP requests.
+Vue-draggable: Drag and drop features.
