@@ -1,0 +1,47 @@
+// src/variables.scss
+// variables.scss
+
+// Colors
+$whimsical-blue: #6ec1e4;
+$dreamy-white: #f5fcff;
+$playful-green: #4caf50;
+$creative-yellow: #ffeb3b;
+$soft-blue: #9edff2;
+$light-green: #8bc34a;
+
+
+// Typography
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Pacifico', cursive;
+
+// Buttons
+$button-border-radius: 4px;
+$button-background: $whimsical-blue;
+$button-font: $primary-font;
+$button-text-color: $dreamy-white;
+$button-hover-bg: $soft-blue;
+
+// Toggles
+$toggle-border-radius: 50%;
+$toggle-background: $playful-green;
+$toggle-knob-color: $dreamy-white;
+$toggle-active-bg: $creative-yellow;
+
+// Input Fields
+$input-border-radius: 4px;
+$input-background: $dreamy-white;
+$input-border: 1px solid $whimsical-blue;
+$input-font: $primary-font;
+$input-text-color: $whimsical-blue;
+
+// Dropdowns
+$dropdown-border-radius: 4px;
+$dropdown-background: $dreamy-white;
+$dropdown-font: $primary-font;
+$dropdown-text-color: $whimsical-blue;
+
+// Tooltips
+$tooltip-border-radius: 4px;
+$tooltip-background: $soft-blue;
+$tooltip-font: $primary-font;
+$tooltip-text-color: $dreamy-white;

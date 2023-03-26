@@ -8,8 +8,8 @@
 
 <script>
 import { reactive, onMounted } from 'vue'
-import Wondershed from './components/Wondershed.vue'
-import WonderWidget from './components/WonderWidget.vue'
+import Wondershed from '../../wip/WonderShed.vue'
+import WonderWidget from './WonderWidget.vue'
 
 export default {
   name: 'WonderLab',

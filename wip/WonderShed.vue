@@ -1,5 +1,6 @@
 <template>
-    <div class="wondershed">
+    <VueDraggableNext>
+    <div class="button">
       <wonder-widget
         v-for="(widget, index) in widgets"
         :key="index"
@@ -9,9 +10,10 @@
       />
       <button @click="addWidget">Add Widget</button>
     </div>
+  </VueDraggableNext>
   </template>
   
-  <script>
+  <script lang="ts">
   import WonderWidget from './components/WonderWidget.vue';
   
   export default {
@@ -20,6 +22,7 @@
     },
     data() {
       return {
+        name: 'WonderShed',
         widgets: [],
       };
     },
@@ -44,35 +47,15 @@
       },
     },
   };
+
+
+import { defineComponent } from 'vue';
+import { VueDraggableNext } from 'vue-draggable-next';
+
+export default defineComponent({
+  components: {
+    VueDraggableNext,
+  },
+});
   </script>
-  
-  <style scoped>
-  /* Add your CSS styles here */
-  .wondershed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  </style>
-  
   

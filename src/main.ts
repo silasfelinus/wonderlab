@@ -1,4 +1,11 @@
 import { createApp } from 'vue';
-import WonderLab from './WonderLab.vue';
+import App from './App.vue';
+import store from './store';
+import './styles/main.scss';
+import { Quasar } from 'quasar';
+import 'quasar/dist/quasar.css';
 
-createApp(WonderLab).mount('#app');
+const app = createApp(App);
+app.use(store);
+app.use(Quasar);
+app.mount('#app');
