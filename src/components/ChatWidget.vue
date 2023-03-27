@@ -7,7 +7,7 @@
           :text="message.text"
           :bg-color="message.sent ? 'primary' : 'grey-3'"
           :text-color="message.sent ? 'white' : 'dark'"
-        />
+        ></q-chat-message>
       </q-item>
     </q-list>
     <q-input
@@ -15,7 +15,7 @@
       outlined
       @keyup.enter="sendMessage"
       placeholder="Type your message..."
-    />
+    ></q-input>
   </q-drawer>
 </template>
 
