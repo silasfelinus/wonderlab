@@ -204,11 +204,4 @@ Implement input and output connections in WonderWidget.vue:
 
 Add input and output elements (grommets) for each widget, and style them accordingly.
 Implement connection logic between input and output grommets of different widgets.
-Add Quasar components to enhance the user interface:
-
-Use q-tooltip
-
-
-
-
-I'll take assistance plugging in the correct code into each section, feel free to stop at appropriate time, I can copy-paste from the previous messages.
+Add Quasar components to enhance the user interface

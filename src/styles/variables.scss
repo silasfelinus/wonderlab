@@ -1,56 +1,211 @@
-//Hierarchy - Preset1
-$color-primary: $whimsical-blue;
-$color-secondary: $dreamy-white;
-$color-tertiary: $playful-green;
-$color-quaternary: $creative-yellow;
-$color-light: $soft-blue;
-$color-accent: $light-green;
+// Presets
+$presets: (
+  "Whimsical Dream": (
+    primary: whimsical-blue,
+    secondary: dreamy-white,
+    tertiary: playful-green,
+    quaternary: creative-yellow,
+    light: soft-blue,
+    accent: light-green
+  ),
+  "Nautical Treasure": (
+    primary: navy-blue,
+    secondary: gold,
+    tertiary: dark-purple,
+    quaternary: silver,
+    light: emerald-green,
+    accent: coral
+  ),
+  "Emerald Sunset": (
+    primary: emerald-green,
+    secondary: coral,
+    tertiary: burgundy,
+    quaternary: mustard-yellow,
+    light: teal,
+    accent: peach
+  ),
+  "Mystic Forest": (
+    primary: deep-red,
+    secondary: sage-green,
+    tertiary: rust-orange,
+    quaternary: olive-green,
+    light: fuchsia,
+    accent: turquoise
+  ),
+  "Enchanted Night": (
+    primary: maroon,
+    secondary: beige,
+    tertiary: electric-blue,
+    quaternary: lavender,
+    light: forest-green,
+    accent: rose-pink
+  ),
+  "Digital Oasis": (
+    primary: deep-green,
+    secondary: bright-green,
+    tertiary: ocean-blue,
+    quaternary: white,
+    light: deep-purple,
+    accent: yellow
+  ),
 
+  "Skybound Spectrum": (
+    primary: sky-blue,
+    secondary: gold,
+    tertiary: silver,
+    quaternary: white,
+    light: soft-blue,
+    accent: playful-green
+  ),
+  "Futuristic Fusion": (
+    primary: cyan,
+    secondary: magenta,
+    tertiary: gold,
+    quaternary: white,
+    light: playful-green,
+    accent: soft-blue
+  ),
+  "Steamcraft Station": (
+    primary: copper,
+    secondary: dark-red,
+    tertiary: dark-slate-gray,
+    quaternary: white,
+    light: light-green,
+    accent: soft-blue
+  ),
+  "Autumn Elegance": (
+    primary: rust-orange,
+    secondary: deep-purple,
+    tertiary: sage-green,
+    quaternary: cranberry-red,
+    light: mustard-yellow,
+    accent: navy-blue
+  ),
+  "Tropical Delight": (
+    primary: cobalt-blue,
+    secondary: emerald-green,
+    tertiary: coral-pink,
+    quaternary: plum-purple,
+    light: sky-blue,
+    accent: golden-yellow
+  ),
+  "Vintage Charm": (
+    primary: mustard-yellow,
+    secondary: burnt-sienna,
+    tertiary: olive-green,
+    quaternary: dark-teal,
+    light: maroon,
+    accent: pale-pink
+  ),
+);
 
-// Preset1
-$whimsical-blue: #6ec1e4;
-$dreamy-white: #f5fcff;
-$playful-green: #4caf50;
-$creative-yellow: #ffeb3b;
-$soft-blue: #9edff2;
-$light-green: #8bc34a;
+// All colors with their name_ids
+$colors: (
+  whimsical-blue: #6ec1e4,
+  dreamy-white: #f5fcff,
+  playful-green: #4caf50,
+  creative-yellow: #ffeb3b,
+  soft-blue: #9edff2,
+  light-green: #8bc34a,
+  navy-blue: #000080,
+  gold: #FFD700,
+  dark-purple: #9370DB,
+  silver: #C0C0C0,
+  emerald-green: #50C878,
+  coral: #FF7F50,
+  burgundy: #800020,
+  mustard-yellow: #E1AD01,
+  teal: #008080,
+  peach: #FFDAB9,
+  deep-red: #8B0000,
+  sage-green: #9EA587,
+  rust-orange: #D2691E,
+  olive-green: #808000,
+  turquoise: #40E0D0,
+  maroon: #800000,
+  beige: #F5F5DC,
+  electric-blue: #7DF9FF,
+  lavender: #E6E6FA,
+  forest-green: #228B22,
+  rose-pink: #FF66B2,
+  royal-blue: #4169E1,
+  burnt-orange: #CC5500,
+  indigo: #4B0082,
+  champagne: #F7E7CE,
+  magenta: #FF00FF,
+  chartreuse: #7FFF00,
+  plum: #8E4585,
+  crimson: #DC143C,
+  mint-green: #98FF98,
+  burnt-sienna: #E97451,
+  seafoam-green: #71EEB8,
+  dark-green: #006400,
+  pale-pink: #FADADD,
+  eggplant: #614051,
+  goldenrod: #DAA520,
+  cranberry: #DB5079,
+  khaki: #F0E68C,
+  sapphire-blue: #0F52BA,
+  blush-pink: #F4AFAF,
+  bronze: #CD7F32,
+  coral-pink: #F88379,
+  wine-red: #722F37,
+  amber: #FFBF00,
+  denim-blue: #1560BD,
+  charcoal-gray: #36454F,
+  pastel-yellow: #FDFD96,
+  ivory: #FFFFF0,
+  slate-gray: #708090,
+  cream: #FFFDD0,
+  tan: #D2B48C,
+  taupe: #483C32,
+  lime-green: #32CD32,
+  dark-teal: #008B8B,
+  rich-navy-blue: #003C71,
+  rich-chocolate-brown: #3D1A00,
+  deep-orange: #FF8C00,
+  pale-blue: #AFEEEE,
+  midnight-blue: #191970,
+  tangerine-orange: #FFA07A,
+  deep-teal: #008B8B,
+  hot-pink: #FF69B4,
+  cobalt-blue: #0047AB,
+  sky-blue: #87CEEB,
+  golden-yellow: #FFDF00,
+  dusty-rose: #C79791,
+  bright-purple: #BE03FD,
+  dark-red: #8B0000,
+  bright-blue: #0000FF,
+);
 
-//Preset 2: WonderWidgets Galaxy
-$color-primary: #1E9BA4; // Interstellar Teal
-$color-secondary: #C0C0C0; // Silver
-$color-tertiary: #B87333; // Copper
-$color-quaternary: #ffffff; // White
-$color-light: #8bc34a; // Light Green
-$color-accent: #4caf50; // Playful Green
+// Function to get the color by name_id
+@function get-color($color-name) {
+  @return map-get($colors, $color-name);
+}
 
-//Preset 3: Skybound Spectrum
-$color-primary: #87CEEB; // Sky Blue
-$color-secondary: #FFD700; // Gold
-$color-tertiary: #C0C0C0; // Silver
-$color-quaternary: #ffffff; // White
-$color-light: #9edff2; // Soft Blue
-$color-accent: #4caf50; // Playful Green
+// Function to get the color from the selected preset
+@function get-preset-color($preset, $color-name) {
+  $color-id: map-get(map-get($presets, $preset), $color-name);
+  @return get-color($color-id);
+}
 
-//Preset 4: Digital Oasis
-$color-primary: #1B5E20; // Deep Green
-$color-secondary: #64DD17; // Bright Green
-$color-tertiary: #00B0FF; // Ocean Blue
-$color-quaternary: #FFFFFF; // White
-$color-light: #9C27B0; // Deep Purple
-$color-accent: #FBC02D; // Yellow
+// Mixin to apply the selected preset
+@mixin apply-preset($preset) {
+  $color-primary: get-preset-color($preset, 'primary');
+  $color-secondary: get-preset-color($preset, 'secondary');
+  $color-tertiary: get-preset-color($preset, 'tertiary');
+  $color-quaternary: get-preset-color($preset, 'quaternary');
+  $color-light: get-preset-color($preset, 'light');
+  $color-accent: get-preset-color($preset, 'accent');
+}
 
-//Preset 5: Futuristic Fusion
-$color-primary: #00BFFF; // Cyan
-$color-secondary: #FF00FF; // Magenta
-$color-tertiary: #FFD700; // Gold
-$color-quaternary: #FFFFFF; // White
-$color-light: #4caf50; // Playful Green
-$color-accent: #9edff2; // Soft Blue
+// Usage
+@include apply-preset("Preset 1");
 
-//Preset 6: Steamcraft Station
-$color-primary: #b87333; // Copper
-$color-secondary: #8b0000; // Dark Red
-$color-tertiary: #2f4f4f; // Dark Slate Gray
-$color-quaternary: #FFFFFF; // White
-$color-light: #8bc34a; // Light Green
-$color-accent: #9edff2; // Soft Blue
+// Your variables.scss file
+$color-primary: get-color(whimsical-blue);
+$color-secondary: get-color(dreamy-white);
+$color-tertiary: get-color(playful-green);
+$color-quaternary: get-color(creative-yellow);
+$color-light: get-color(soft-blue);
+$color-accent: get-color(light-green);
