@@ -1,8 +1,8 @@
 import type { QuasarLanguage, QuasarIconSet } from 'quasar';
 
-const quasarUserOptions = {
-  lang: QuasarLanguage['en-us'],
-  iconSet: QuasarIconSet['material-icons'],
+const QuasarUserOptions = {
+  QuasarLanguage: ['en-us'],
+  QuasarIconSet: ['material-icons'],
   components: {},
   directives: {},
   plugins: {},
@@ -17,4 +17,4 @@ const quasarUserOptions = {
   autoImportDirectiveCase: 'kebab',
 };
 
-export default quasarUserOptions;
+export default QuasarUserOptions;
