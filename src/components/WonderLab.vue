@@ -1,13 +1,6 @@
 <template>
   <div class="wonderlab">
-      <div
-        v-for="widget in widgets"
-        :key="widget.id"
-        class="wonder-widget"
-        :style="{ top: widget.y + 'px', left: widget.x + 'px' }"
-      >
-        <wonder-widget :widget="widget" />
-      </div>
+
   </div>
 </template>
 
