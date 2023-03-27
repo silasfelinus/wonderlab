@@ -170,25 +170,7 @@ export default defineComponent({
 </script>
 
 [CURRENT TASK]
-Fix errors from launching "npm run serve":
-ERROR in src/main.ts:10:5
-TS2554: Expected 2 arguments, but got 1.
-     8 | const app = createApp(App);
-     9 | app.use(store);
-  > 10 | app.use(Quasar);
-       |     ^^^^^^^^^^^
-    11 | app.mount('#app');
-
-ERROR in src/quasar-user-options.ts:3:7
-TS2739: Type '{ config: {}; plugins: {}; }' is missing the following properties from type 'QuasarPluginOptions': lang, iconSet, components, directives
-    1 | import { QuasarPluginOptions } from 'quasar';
-    2 |
-  > 3 | const quasarUserOptions: QuasarPluginOptions = {
-      |       ^^^^^^^^^^^^^^^^^
-    4 |   config: {},
-    5 |   plugins: {},
-    6 | };
-
+Get the server to display output when navigating to App host:ip. It appears to be connected, but the pages are loading blank. There should be...something, yes? How do I troubleshoot hwere the error is?
 
 Implement draggable and resizable functionality for WonderWidgets in WonderLab.vue:
 
