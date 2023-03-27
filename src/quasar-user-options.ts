@@ -1,6 +1,6 @@
 import type { QuasarLanguage, QuasarIconSet } from 'quasar';
 
-const quasarUserOptions: QuasarPluginOptions = {
+const quasarUserOptions = {
   lang: QuasarLanguage['en-us'],
   iconSet: QuasarIconSet['material-icons'],
   components: {},
