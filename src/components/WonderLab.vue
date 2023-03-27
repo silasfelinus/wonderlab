@@ -1,33 +1,34 @@
 <template>
-  <q-card>
-    <q-card-section>
-      <div id="wonderlab">
-        <wonder-widget v-for="(widget, index) in widgets" :key="index" />
+  <div class="wonderlab">
+    <draggable v-model="widgets">
+      <div
+        v-for="(widget, index) in widgets"
+        :key="widget.id"
+        class="wonder-widget"
+        :style="{ top: widget.y + 'px', left: widget.x + 'px' }"
+      >
+        <wonder-widget :widget="widget" />
       </div>
-    </q-card-section>
-  </q-card>
+    </draggable>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Draggable from 'vuedraggable';
 import WonderWidget from './WonderWidget.vue';
 
 export default defineComponent({
   components: {
+    Draggable,
     WonderWidget,
   },
   data() {
     return {
-      widgets: [], // Populate this array with your widgets
+      widgets: [
+        // Add your widgets data with x and y positions here
+      ],
     };
   },
 });
 </script>
-
-<style scoped>
-#wonderlab {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-</style>
