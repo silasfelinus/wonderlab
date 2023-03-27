@@ -2,12 +2,12 @@
   <q-header>
     <q-toolbar>
       <q-toolbar-title>Widget Wonderlab</q-toolbar-title>
-      <q-space />
-      <q-btn flat @click="saveLab" label="Save" icon="save" />
-      <q-btn flat @click="loadLab" label="Load" icon="folder_open" />
-      <q-btn flat @click="createNewWidget" label="New Widget" icon="add" />
-      <q-btn flat @click="toggleNightMode" icon="brightness_4" />
-      <q-btn flat @click="userLogin" label="Login" icon="person" />
+      <q-space></q-space>
+      <q-btn flat @click="saveLab" label="Save" icon="save"></q-btn>
+      <q-btn flat @click="loadLab" label="Load" icon="folder_open"></q-btn>
+      <q-btn flat @click="createNewWidget" label="New Widget" icon="add"></q-btn>
+      <q-btn flat @click="toggleNightMode" icon="brightness_4"></q-btn>
+      <q-btn flat @click="userLogin" label="Login" icon="person"></q-btn>
     </q-toolbar>
   </q-header>
 </template>
