@@ -8,6 +8,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import VueDragResize from 'vue-drag-resize';
+
+export default defineComponent({
+  directives: {
+    'resize-draggable': VueDragResize,
+  },
+});
+</script>
 
 export default defineComponent({});
 </script>
