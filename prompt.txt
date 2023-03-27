@@ -10,7 +10,7 @@ Widget Wonderlab
 A single-screen Vue web app designed to provide a modern, sleek, fast, and friendly sandbox to save, load, share, and create WonderWidgets.
 
 [Dev Environment]
-Ubuntu 22, Visual Studio Code, Chrome
+Ubuntu 22, Visual Studio Code, Chrome, Node LTS 18.15.0
 
 [INSTALLED MODULES]
 Vue 3, TypeScript, SCSS, Vuex, vue-drag-resize, Quasar
