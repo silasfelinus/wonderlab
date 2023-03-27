@@ -1,22 +1,42 @@
+<template>
+  <q-header>
+    <q-toolbar>
+      <q-toolbar-title>Widget Wonderlab</q-toolbar-title>
+      <q-space />
+      <q-btn flat @click="saveLab" label="Save" icon="save" />
+      <q-btn flat @click="loadLab" label="Load" icon="folder_open" />
+      <q-btn flat @click="createNewWidget" label="New Widget" icon="add" />
+      <q-btn flat @click="toggleNightMode" icon="brightness_4" />
+      <q-btn flat @click="userLogin" label="Login" icon="person" />
+    </q-toolbar>
+  </q-header>
+</template>
 
-  <template>
-    <VueDraggableNext>
-        <header class="header">
-      <h1 class="header__logo">WonderLab</h1>
-    </VueDraggableNext>
-  </template>
-  
-  
-  <script lang="ts">
-  import { defineComponent } from 'vue';
-  import { VueDraggableNext } from 'vue-draggable-next';
-  
-  export default defineComponent({
-    components: {
-      VueDraggableNext,
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  methods: {
+    saveLab() {
+      // Implement save lab functionality
+      console.log('Save Lab');
     },
-  });
-  </script>
-  
-  <style lang="scss" scoped>
-  </style>
+    loadLab() {
+      // Implement load lab functionality
+      console.log('Load Lab');
+    },
+    createNewWidget() {
+      // Implement create new widget functionality
+      console.log('Create New Widget');
+    },
+    toggleNightMode() {
+      // Implement night mode toggle functionality
+      console.log('Toggle Night Mode');
+    },
+    userLogin() {
+      // Implement user login functionality
+      console.log('User Login');
+    },
+  },
+});
+</script>

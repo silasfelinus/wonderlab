@@ -1,65 +1,33 @@
 <template>
-  <div>
-    <div class="wondershed" ref="wondershed" v-resizable></div>
-    <button @click="createWonderWidget">Create WonderWidget</button>
-    <div v-for="widget in wonderWidgets" :key="widget.id" :style="{top: widget.y + 'px', left: widget.x + 'px'}" class="wonder-widget">{{ widget.id }}</div>
-  </div>
+  <q-card>
+    <q-card-section>
+      <div id="wonderlab">
+        <wonder-widget v-for="(widget, index) in widgets" :key="index" />
+      </div>
+    </q-card-section>
+  </q-card>
 </template>
 
-<script>
-import { reactive, onMounted } from 'vue'
-import Wondershed from '../../wip/WonderShed.vue'
-import WonderWidget from './WonderWidget.vue'
+<script lang="ts">
+import { defineComponent } from 'vue';
+import WonderWidget from './WonderWidget.vue';
 
-export default {
-  name: 'WonderLab',
+export default defineComponent({
   components: {
-    Wondershed,
-    WonderWidget
+    WonderWidget,
   },
-  setup() {
-    const wonderWidgets = reactive([])
-
-    function createWonderWidget() {
-      const widget = {
-        id: Math.random().toString(36).substr(2, 9),
-        x: Math.floor(Math.random() * (window.innerWidth - 100)),
-        y: Math.floor(Math.random() * (window.innerHeight - 100))
-      }
-      wonderWidgets.push(widget)
-    }
-
-    onMounted(() => {
-      const wondershedEl = this.$refs.wondershed
-      const wondershedRect = wondershedEl.getBoundingClientRect()
-
-      wondershedEl.style.position = 'absolute'
-      wondershedEl.style.top = wondershedRect.top + 'px'
-      wondershedEl.style.left = wondershedRect.left + 'px'
-    })
-
+  data() {
     return {
-      wonderWidgets,
-      createWonderWidget
-    }
-  }
-}
+      widgets: [], // Populate this array with your widgets
+    };
+  },
+});
 </script>
 
-<style>
-.wondershed {
-  width: 100px;
-  height: 100px;
-  background-color: #f00;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.wonder-widget {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #0f0;
+<style scoped>
+#wonderlab {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 </style>

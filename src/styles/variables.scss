@@ -1,7 +1,13 @@
-// src/variables.scss
+//Hierarchy - Preset1
+$color-primary: $whimsical-blue;
+$color-secondary: $dreamy-white;
+$color-tertiary: $playful-green;
+$color-quaternary: $creative-yellow;
+$color-light: $soft-blue;
+$color-accent: $light-green;
 
 
-// Colors
+// Preset1
 $whimsical-blue: #6ec1e4;
 $dreamy-white: #f5fcff;
 $playful-green: #4caf50;
@@ -48,47 +54,3 @@ $color-tertiary: #2f4f4f; // Dark Slate Gray
 $color-quaternary: #FFFFFF; // White
 $color-light: #8bc34a; // Light Green
 $color-accent: #9edff2; // Soft Blue
-
-//Hierarchy
-$color-primary: $whimsical-blue;
-$color-secondary: $dreamy-white;
-$color-tertiary: $playful-green;
-$color-quaternary: $creative-yellow;
-$color-light: $soft-blue;
-$color-accent: $light-green;
-
-// Typography
-$font-primary: 'Poppins', sans-serif;
-$font-secondary: 'Pacifico', cursive;
-
-// Buttons
-$button-border-radius: 4px;
-$button-background-color: $color-primary;
-$button-font-family: $font-primary;
-$button-text-color: $color-secondary;
-$button-hover-background-color: $color-light;
-
-// Toggles
-$toggle-border-radius: 50%;
-$toggle-background-color: $color-tertiary;
-$toggle-knob-color: $color-secondary;
-$toggle-active-background-color: $color-quaternary;
-
-// Input Fields
-$input-border-radius: 4px;
-$input-background-color: $color-secondary;
-$input-border-color: $color-primary;
-$input-font-family: $font-primary;
-$input-text-color: $color-primary;
-
-// Dropdowns
-$dropdown-border-radius: 4px;
-$dropdown-background-color: $color-secondary;
-$dropdown-font-family: $font-primary;
-$dropdown-text-color: $color-primary;
-
-// Tooltips
-$tooltip-border-radius: 4px;
-$tooltip-background-color: $color-light;
-$tooltip-font-family: $font-primary;
-$tooltip-text-color: $color-secondary;

@@ -1,15 +1,7 @@
 <template>
-
+  <q-footer>
+    <q-toolbar>
+      <q-toolbar-title>&copy; 2023 Widget Wonderlab</q-toolbar-title>
+    </q-toolbar>
+  </q-footer>
 </template>
-
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-import { VueDraggableNext } from 'vue-draggable-next';
-
-export default defineComponent({
-  components: {
-    VueDraggableNext,
-  },
-});
-</script>

@@ -1,69 +1,29 @@
 <template>
-  <vue-drag-resize
-    @resizing="onResize"
-    @dragging="onDrag"
-    @dragend="onDragEnd"
-    @resizeend="onResizeEnd"
-  >
-    <div class="wonderwidget">
-      <!-- Your widget content goes here -->
-      <button @click="deleteWidget">X</button>
-    </div>
-  </vue-drag-resize>
+  <div class="wonder-widget">
+    <div class="input-grommet"></div>
+    <div class="output-grommet"></div>
+    <div class="data-display">Data Display</div>
+  </div>
 </template>
 
-<script>
-export default {
-  props: {
-    widget: Object,
-  },
-  methods: {
-    onResize(x, y, width, height) {
-      this.$emit('update', { ...this.widget, width, height });
-    },
-    onDrag(x, y) {
-      this.$emit('update', { ...this.widget, x, y });
-    },
-    onDragEnd(x, y) {
-      this.$emit('update', { ...this.widget, x, y });
-    },
-    onResizeEnd(x, y, width, height) {
-      this.$emit('update', { ...this.widget, width, height });
-    },
-    deleteWidget() {
-      this.$emit('delete');
-    },
-  },
-};
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({});
 </script>
 
 <style scoped>
-/* Add your CSS styles here */
 .wonder-widget {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #e0e0e0;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-button {
   position: absolute;
-  top: 4px;
-  right: 4px;
-  background-color: #f44336;
-  color: white;
-  padding: 2px 6px;
-  font-size: 12px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  /* Customize the dimensions and style of the wonder-widget */
 }
 
-button:hover {
-  background-color: #d32f2f;
+.input-grommet,
+.output-grommet {
+  /* Customize the style of the input and output grommets */
+}
+
+.data-display {
+  /* Customize the style of the data display */
 }
 </style>
