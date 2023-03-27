@@ -2,7 +2,7 @@
   <div class="wonderlab">
     <draggable v-model="widgets">
       <div
-        v-for="(widget, index) in widgets"
+        v-for="widget in widgets"
         :key="widget.id"
         class="wonder-widget"
         :style="{ top: widget.y + 'px', left: widget.x + 'px' }"
