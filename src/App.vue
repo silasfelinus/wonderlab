@@ -18,6 +18,7 @@ import FooterWidget from './components/FooterWidget.vue';
 import ChatWidget from './components/ChatWidget.vue';
 import WonderLab from './components/WonderLab.vue';
 
+
 export default defineComponent({
   components: {
     HeaderWidget,

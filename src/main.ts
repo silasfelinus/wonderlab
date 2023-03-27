@@ -3,11 +3,7 @@ import App from './App.vue';
 import store from './store';
 import './styles/main.scss';
 import { Quasar } from 'quasar';
-import QuasarUserOptions from './quasar-user-options'
-import Vue from 'vue'
-import VueDragResize from 'vue-drag-resize'
-
-Vue.component('vue-drag-resize', VueDragResize)
+import QuasarUserOptions from './quasar-user-options' 
 
 const app = createApp(App);
 app.use(store);
