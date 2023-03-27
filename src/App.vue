@@ -12,10 +12,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Header from './components/Header.vue';
-import Sidebar from './components/Sidebar.vue';
-import Footer from './components/Footer.vue';
-import ChatWindow from './components/ChatWindow.vue';
+import Header from './components/HeaderWidget.vue';
+import Sidebar from './components/SideWidget.vue';
+import Footer from './components/FooterWidget.vue';
+import ChatWindow from './components/ChatWidget.vue';
 import WonderLab from './components/WonderLab.vue';
 
 export default defineComponent({

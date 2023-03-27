@@ -20,27 +20,23 @@ Vue 3, TypeScript, SCSS, Vuex, Vue-Draggable, Quasar
 Material Design, Composition API
 
 [FRONT-END]
-Header fixed at top
-patrially-collapsile Sidebar on right
-ChatWindow on left
-below ChatWindow, left Footer is stopped by Sidebar
+HeaderWidget fixed at top
+patrially-collapsile SideWidget on right
+ChatWidget on left
+below ChatWidget, left FooterWidget is stopped SideWidget
 centered of screen, square WonderLab
-centered inside Wonderlab, Button
-
+centered inside Wonderlab, ButtonWidget
 
 [Structure: Material Design]
 Component:Desired Effects
 
-./src/components/Header.vue: Fixed at the top, provides the ability to save/load lab states, create new widgets, manage user login, and toggle night mode.
-./src/components/Sidebar.vue: Partially-collapsible, contains a variety of drag-and-droppable Material Design icons to activate options within widgets and the lab. 
-./src/components/Footer.vue: Displays copyright information.
-./src/components/ChatWindow.vue: Partially-collapsible component on the left side for user interaction.
+./src/components/HeaderWidget.vue: Fixed at the top, provides the ability to save/load lab states, create new widgets, manage user login, and toggle night mode.
+./src/componenSideWidget.vue: Partially-collapsible, contains a variety of drag-and-droppable Material Design icons to activate options within widgets and the lab. 
+./src/components/FooterWidget.vue: Displays copyright information.
+./src/components/ChatWidget.vue: Partially-collapsible component on the left side for user interaction.
 ./src/components/WonderLab.vue: A grid-based workspace for building, saving, and sharing WonderWidgets, utilizing a step-based save system for easy progress tracking
-./src/components/WonderWidget.vue: GUI-abstracted programmed-API calls to language processing APIs, featuring at least one input_grommet, output_grommet, and data display.
-
-[Sidebar Icons]
-new_text_input, new_text_display, new_image_input, new_image_output, new_robot, new_drop_down_bar,new_microphone, new_speaker, new_cables, new_widget, new_garbage_shed, new_button
-
+./src/components/WonderWidget.vue: GUI-abstracted programmed-API calls to language processing APIs, featuring at least one input_grommet, output_grommet, and data display.SideWidget Icons]
+new_text_input, new_text_display, new_image_input, new_image_output, new_robot, new_drop_down_bar,new_microphone, new_speaker, new_cables, new_widget, new_garbage_shed, new_ButtonWidget
 
 
 [Key Intended Features]
@@ -67,7 +63,6 @@ txt, yaml, json, jpg, png.
 ./tsconfig.jsonvue.config.js
 ./public/index.html
 ./main.ts
-./styles/variables.scss
 
 [NOTES]
 Use code to visually represent components
@@ -75,16 +70,12 @@ All configured files are available as needed, ask if you are unclear of the stru
 All colors should reference their preset variable in variables.scss
 
 
-[COLORS VARIABLES]
+[COLOR VARIABLES]
 $color-primary, $color-secondary, $color-tertiary, $color-quaternary, $color-light, $color-accent
 
-[BUILT COMPONENTS]
+[BUILT COMPONENTS WITH EMPTY FUNCTIONS]
 App.vue
-Header.vue
-SideBar.vue
-
-[EMPTY COMPONENTS]
-./src/components/: Button.vue, ChatWindow.vue, Footer.vue, TextInput.vue, Wonderlab.vue, WonderWidget.vue
+./src/components/: HeaderWidget.vue, SideWidget.vue, ButtonWidget.vue, ChatWidget.vue, FooterWidget.vue, TextInput.vue, Wonderlab.vue, WonderWidget.vue
 
 
 I'm including [main.ts][App.vue][Header.vue] to establish a beginning chain of programming and practices:
@@ -119,28 +110,26 @@ app.mount('#app');
   <q-layout>
     <Header />
     <q-page-container>
-      <ChatWindow />
+      <ChatWidget />
       <WonderLab />
-      <Footer />
-    </q-page-container>
-    <Sidebar />
+      <FooterWidget />
+    </q-page-container>SideWidget />
   </q-layout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Header from './components/Header.vue';
-import Sidebar from './components/Sidebar.vue';
-import Footer from './components/Footer.vue';
-import ChatWindow from './components/ChatWindow.vue';
+impoSideWidget from './componenSideWidget.vue';
+import FooterWidget from './components/FooterWidget.vue';
+import ChatWidget from './components/ChatWidget.vue';
 import WonderLab from './components/WonderLab.vue';
 
 export default defineComponent({
   components: {
-    Header,
-    Sidebar,
-    Footer,
-    ChatWindow,
+    HeaderSideWidget,
+    FooterWidget,
+    ChatWidget,
     WonderLab,
   },
 });
@@ -191,16 +180,35 @@ export default defineComponent({
 </script>
 
 [CURRENT TASKS]
-Sidebar.vue: Create a partially-collapsible sidebar with Material Design icons that represent each of the options you mentioned (new_text_input, new_text_display, etc.). Use Quasar's q-drawer component to create the sidebar, and include the icons using q-icon component with the respective icon names from Material Icons.
+Implement draggable and resizable functionality for WonderWidgets in WonderLab.vue:
 
-ChatWindow.vue: Create a partially-collapsible chat window on the left side of the screen. You can use Quasar's q-drawer component again, with a different position setting, and include a chat interface using q-chat-message and q-input components.
+You can use the Vue-Draggable library to make the widgets draggable. Update the widgets array in WonderLab.vue to include position data (x and y coordinates) for each widget.
+Add the Vue-Draggable component in WonderLab.vue to wrap the wonder-widget components.
+Update the WonderWidget.vue component's style to make it resizable.
+Implement the actions associated with the sidebar icons in Sidebar.vue:
 
-Footer.vue: Create a simple footer that displays copyright information. You can use Quasar's q-footer component and place a q-toolbar-title with the copyright text inside.
+Each icon should have a click event listener that triggers a specific function.
+Implement functions for each icon action, such as creating new widgets, adding new input/output elements, etc.
+Implement saving and loading lab states in Header.vue:
 
-WonderLab.vue: Implement a grid-based workspace for building, saving, and sharing WonderWidgets. You can use Quasar's q-grid component, and include draggable and resizable features using Vue-Draggable.
+Implement functions to save and load the lab state (widgets, positions, settings, etc.) to/from supported file types (txt, yaml, json).
+Implement user login functionality in Header.vue:
 
-WonderWidget.vue: Create the main WonderWidget component that includes at least one input_grommet, output_grommet, and data display. This component will be the basis for all the widgets created within the WonderLab.
+Add a login form using Quasar's q-dialog and q-form components.
+Implement authentication logic for user login.
+Implement night mode functionality in Header.vue:
 
-For the additional components like Button.vue, TextInput.vue, etc., you can create basic structures using Quasar's components (e.g., q-btn, q-input, and others) and customize them based on our needs.
+Add a night mode theme to your SCSS files (e.g., dark versions of your color variables).
+Toggle between light and dark themes when the user clicks the night mode button.
+Implement input and output connections in WonderWidget.vue:
+
+Add input and output elements (grommets) for each widget, and style them accordingly.
+Implement connection logic between input and output grommets of different widgets.
+Add Quasar components to enhance the user interface:
+
+Use q-tooltip
+
+
+
 
 I'll take assistance plugging in the correct code into each section, feel free to stop at appropriate time, I can copy-paste from the previous messages.
